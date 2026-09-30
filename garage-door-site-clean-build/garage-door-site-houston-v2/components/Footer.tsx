@@ -1,0 +1,2 @@
+import Link from "next/link"; import {site} from "@/lib/site";
+export function Footer(){return <footer><div className="container footer"><div><strong>{site.name}</strong><p>{site.description}</p></div><div className="footerlinks"><Link href="/privacy/">Privacy</Link><Link href="/terms/">Terms</Link><Link href="/contact/">Contact</Link></div></div><div className="copyright">© 2026 {site.name}. All rights reserved.</div></footer>}
