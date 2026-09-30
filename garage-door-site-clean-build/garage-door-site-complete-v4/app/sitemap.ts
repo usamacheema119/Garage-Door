@@ -1,0 +1,3 @@
+import type {MetadataRoute} from "next"; import {site} from "@/lib/site";
+const paths=["/","/garage-door-repair/","/garage-door-spring-repair/","/garage-door-opener-repair/","/emergency-garage-door-repair/","/garage-door-wont-open/","/garage-door-wont-close/","/garage-door-off-track/","/broken-garage-door-spring/","/garage-door-opener-not-working/","/garage-door-repair-cost/","/locations/texas/houston/"];
+export default function sitemap():MetadataRoute.Sitemap{return paths.map((path,i)=>({url:`${site.url}${path}`,priority:path==="/"?1:path.includes("locations")?0.9:path.includes("garage-door-repair")?0.9:0.75}))}

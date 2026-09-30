@@ -1,0 +1,2 @@
+import Link from "next/link"; import {site} from "@/lib/site"; import {CallButton} from "./CallButton";
+export function Header(){return <header className="header"><div className="container nav"><Link href="/" className="brand">{site.name}</Link><nav><Link href="/garage-door-repair/">Services</Link><Link href="/garage-door-spring-repair/">Springs</Link><Link href="/garage-door-opener-repair/">Openers</Link><Link href="/locations/texas/houston/">Houston</Link><Link href="/#problems">Problems</Link></nav><CallButton/></div></header>}
