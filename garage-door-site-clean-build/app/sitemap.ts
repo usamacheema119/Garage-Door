@@ -1,0 +1,1 @@
+import type {MetadataRoute} from "next"; export default function sitemap():MetadataRoute.Sitemap{const base="https://example.com";return[{url:`${base}/`,priority:1},{url:`${base}/garage-door-repair/`,priority:.8}]}

@@ -1,0 +1,1 @@
+export const site={name:"Garage Door Help",description:"Garage door repair and service information with a simple way to connect with local service professionals.",phoneDisplay:"(713) 379-8567",phoneHref:"tel:+17133798567"};
